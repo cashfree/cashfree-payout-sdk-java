@@ -1,0 +1,57 @@
+name: Build and Sign
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get Latest Tag
+      uses: actions-ecosystem/action-get-latest-tag@v1
+      id: get-latest-tag
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
+    - name: Build project
+      run: chmod +x gradlew
+      
+    - name: Validate Gradle wrapper
+      uses: gradle/wrapper-validation-action@ccb4328a959376b642e027874838f60f8e596de3
+      
+    - name: Publish package
+      run: ./gradlew clean build publishReleasePublicationToSonatypeRepository closeAndReleaseSonatypeStagingRepository
+      env:
+        MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+        MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
+        SIGNING_KEY_ID: ${{ secrets.SIGNING_KEY_ID }}
+        SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+        SIGNING_PASSWORD: ${{ secrets.SIGNING_PASSWORD }}
+        SONATYPE_STAGING_PROFILE_ID: ${{ secrets.SONATYPE_STAGING_PROFILE_ID }}
+
+    - name: Release
+      run: |
+        curl --location --request POST 'https://api.github.com/repos/cashfree/cashfree-pg-sdk-java/releases' \
+          --header 'Accept: application/vnd.github+json' \
+          --header "Authorization: Bearer ${{ secrets.TOKEN_GITHUB }}" \
+          --header 'X-GitHub-Api-Version: 2022-11-28' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{
+              "tag_name": "${{ steps.get-latest-tag.outputs.tag }}",
+              "target_commitish": "main",
+              "name": "${{ steps.get-latest-tag.outputs.tag }}",
+              "body": "Release version ${{ steps.get-latest-tag.outputs.tag }}",
+              "draft": false,
+              "prerelease": false,
+              "generate_release_notes": false
+          }'
