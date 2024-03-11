@@ -52,7 +52,7 @@ import com.cashfree.JSON;
  * Beneficiary instrument details
  */
 @Schema(description = "Beneficiary instrument details")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-08T12:01:17.874167Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T10:35:59.070604Z[Etc/UTC]")
 public class CreateBeneficiaryRequestBeneficiaryInstrumentDetails {
   public static final String SERIALIZED_NAME_BANK_ACCOUNT_NUMBER = "bank_account_number";
   @SerializedName(SERIALIZED_NAME_BANK_ACCOUNT_NUMBER)

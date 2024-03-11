@@ -53,7 +53,7 @@ import com.cashfree.JSON;
  * Standard Transfer V2
  */
 @Schema(description = "Standard Transfer V2")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-08T12:01:17.874167Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T10:35:59.070604Z[Etc/UTC]")
 public class CreateTransferRequest {
   public static final String SERIALIZED_NAME_TRANSFER_ID = "transfer_id";
   @SerializedName(SERIALIZED_NAME_TRANSFER_ID)
