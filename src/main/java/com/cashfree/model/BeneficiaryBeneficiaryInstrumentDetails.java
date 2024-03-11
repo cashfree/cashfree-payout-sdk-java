@@ -52,7 +52,7 @@ import com.cashfree.JSON;
  * It displays the payment instrument details of the beneficiary.
  */
 @Schema(description = "It displays the payment instrument details of the beneficiary.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T12:02:16.890239Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T15:05:20.896700Z[Etc/UTC]")
 public class BeneficiaryBeneficiaryInstrumentDetails {
   public static final String SERIALIZED_NAME_BANK_ACCOUNT_NUMBER = "bank_account_number";
   @SerializedName(SERIALIZED_NAME_BANK_ACCOUNT_NUMBER)
@@ -76,11 +76,11 @@ public class BeneficiaryBeneficiaryInstrumentDetails {
   }
 
    /**
-   * It displays the bank account of the beneficiary.]
+   * It displays the bank account of the beneficiary.
    * @return bankAccountNumber
   **/
   @javax.annotation.Nullable
-  @Schema(example = "00111122233", requiredMode = Schema.RequiredMode.NOT_REQUIRED, description = "It displays the bank account of the beneficiary.]")
+  @Schema(example = "00111122233", requiredMode = Schema.RequiredMode.NOT_REQUIRED, description = "It displays the bank account of the beneficiary.")
   public String getBankAccountNumber() {
     return bankAccountNumber;
   }

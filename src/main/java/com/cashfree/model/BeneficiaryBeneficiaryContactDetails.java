@@ -52,7 +52,7 @@ import com.cashfree.JSON;
  * It displays the contact details of the beneficiary.
  */
 @Schema(description = "It displays the contact details of the beneficiary.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T12:02:16.890239Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T15:05:20.896700Z[Etc/UTC]")
 public class BeneficiaryBeneficiaryContactDetails {
   public static final String SERIALIZED_NAME_BENEFICIARY_EMAIL = "beneficiary_email";
   @SerializedName(SERIALIZED_NAME_BENEFICIARY_EMAIL)
