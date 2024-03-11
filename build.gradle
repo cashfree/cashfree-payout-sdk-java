@@ -6,7 +6,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 group = 'com.cashfree.payout.java'
-version = '0.0.12'
+version = '0.0.14'
 
 buildscript {
     repositories {
@@ -116,7 +116,7 @@ if(hasProperty('target') && target == 'android') {
 
                 groupId 'com.cashfree.payout.java'
                 artifactId 'cashfree_payout'
-                version '0.0.12'
+                version '0.0.14'
 
                 from components.java
 
@@ -127,12 +127,12 @@ if(hasProperty('target') && target == 'android') {
                 // Mostly self-explanatory metadata
                 pom {
                     name = 'cashfree_payout'
-                    description = 'Cashfree Payments, PG Java SDK'
-                    url = 'https://github.com/cashfree/cashfree-pg-sdk-java'
+                    description = 'Cashfree Payments, Payout Java SDK'
+                    url = 'https://github.com/cashfree/cashfree-payout-sdk-java'
                     licenses {
                         license {
                             name = 'Apache License'
-                            url = 'https://github.com/cashfree/cashfree-pg-sdk-java/blob/master/LICENSE.md'
+                            url = 'https://github.com/cashfree/cashfree-payout-sdk-java/blob/master/LICENSE.md'
                         }
                     }
                     developers {
@@ -147,9 +147,9 @@ if(hasProperty('target') && target == 'android') {
                     // Version control info - if you're using GitHub, follow the
                     // format as seen here
                     scm {
-                        connection = 'scm:git:github.com/cashfree/cashfree-pg-sdk-java.git'
-                        developerConnection = 'scm:git:ssh://github.com/cashfree/cashfree-pg-sdk-java.git'
-                        url = 'https://github.com/cashfree/cashfree-pg-sdk-java'
+                        connection = 'scm:git:github.com/cashfree/cashfree-payout-sdk-java.git'
+                        developerConnection = 'scm:git:ssh://github.com/cashfree/cashfree-payout-sdk-java.git'
+                        url = 'https://github.com/cashfree/cashfree-payout-sdk-java'
                     }
                 }
             }
