@@ -18,14 +18,14 @@ Try out our interactive guides at [Cashfree Dev Studio](https://www.cashfree.com
 ### Installation
 * Gradle Project
 ```bash
-implementation `com.cashfree.payout.java:cashfree_payout:0.0.4`
+implementation `com.cashfree.payout.java:cashfree_payout:0.0.9`
 ```
 * Maven Project
 ```bash
 <dependency>
   <groupId>com.cashfree.payout.java</groupId>
   <artifactId>cashfree_payout</artifactId>
-  <version>0.0.4</version>
+  <version>0.0.9</version>
   <scope>compile</scope>
 </dependency>
 <dependency>
