@@ -54,7 +54,7 @@ import com.cashfree.JSON;
  * Find the request parameters to create a beneficiary
  */
 @Schema(description = "Find the request parameters to create a beneficiary")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-08T12:01:17.874167Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T10:39:22.288631Z[Etc/UTC]")
 public class CreateBeneficiaryRequest {
   public static final String SERIALIZED_NAME_BENEFICIARY_ID = "beneficiary_id";
   @SerializedName(SERIALIZED_NAME_BENEFICIARY_ID)
