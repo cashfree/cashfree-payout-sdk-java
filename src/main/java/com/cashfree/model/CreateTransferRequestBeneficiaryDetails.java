@@ -54,7 +54,7 @@ import com.cashfree.JSON;
  * It should contain the details of the beneficiary who receives the transfer amount.
  */
 @Schema(description = "It should contain the details of the beneficiary who receives the transfer amount.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-08T12:01:17.874167Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T11:10:12.476745Z[Etc/UTC]")
 public class CreateTransferRequestBeneficiaryDetails {
   public static final String SERIALIZED_NAME_BENEFICIARY_ID = "beneficiary_id";
   @SerializedName(SERIALIZED_NAME_BENEFICIARY_ID)

@@ -52,7 +52,7 @@ import com.cashfree.JSON;
  * Batch Transfer V2 Response
  */
 @Schema(description = "Batch Transfer V2 Response")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-08T12:01:17.874167Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T11:10:12.476745Z[Etc/UTC]")
 public class CreateBatchTransferResponse {
   public static final String SERIALIZED_NAME_BATCH_TRANSFER_ID = "batch_transfer_id";
   @SerializedName(SERIALIZED_NAME_BATCH_TRANSFER_ID)

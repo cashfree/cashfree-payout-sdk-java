@@ -53,7 +53,7 @@ import com.cashfree.JSON;
  * It should contain the details of where the beneficiary will receive the money. You input these details if you haven&#39;t added the beneficiary in the Payouts dashboard.
  */
 @Schema(description = "It should contain the details of where the beneficiary will receive the money. You input these details if you haven't added the beneficiary in the Payouts dashboard.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-08T12:01:17.874167Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T11:10:12.476745Z[Etc/UTC]")
 public class CreateTransferRequestBeneficiaryDetailsBeneficiaryInstrumentDetails {
   public static final String SERIALIZED_NAME_BANK_ACCOUNT_NUMBER = "bank_account_number";
   @SerializedName(SERIALIZED_NAME_BANK_ACCOUNT_NUMBER)
