@@ -5,7 +5,7 @@
     <artifactId>cashfree_payout</artifactId>
     <packaging>jar</packaging>
     <name>cashfree_payout</name>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <url>https://github.com/cashfree/cashfree-payout-sdk-java</url>
     <description>Java Framework for Cashfree Payout.</description>
     <scm>
