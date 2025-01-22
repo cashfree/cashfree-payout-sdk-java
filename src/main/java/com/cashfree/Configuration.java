@@ -13,11 +13,11 @@
 
 package com.cashfree;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T15:05:20.896700Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-22T05:02:47.591666Z[Etc/UTC]")
 class Configuration {
-    public static final String VERSION = "0.0.14";
+    public static final String VERSION = "2.0.1";
 
-    private static Cashfree.ApiClient defaultApiClient = new Cashfree.ApiClient();
+    private static CashfreePayout.ApiClient defaultApiClient = new CashfreePayout.ApiClient();
 
     /**
      * Get the default API client, which would be used when creating API
@@ -25,7 +25,7 @@ class Configuration {
      *
      * @return Default API client
      */
-    public static Cashfree.ApiClient getDefaultApiClient() {
+    public static CashfreePayout.ApiClient getDefaultApiClient() {
         return defaultApiClient;
     }
 
@@ -35,7 +35,7 @@ class Configuration {
      *
      * @param apiClient API client
      */
-    public static void setDefaultApiClient(Cashfree.ApiClient apiClient) {
+    public static void setDefaultApiClient(CashfreePayout.ApiClient apiClient) {
         defaultApiClient = apiClient;
     }
 }
