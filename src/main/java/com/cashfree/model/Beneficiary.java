@@ -54,7 +54,7 @@ import com.cashfree.JSON;
  * Contains the information of the created beneficiary
  */
 @Schema(description = "Contains the information of the created beneficiary")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-11T15:05:20.896700Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2025-01-22T05:02:47.591666Z[Etc/UTC]")
 public class Beneficiary {
   public static final String SERIALIZED_NAME_BENEFICIARY_ID = "beneficiary_id";
   @SerializedName(SERIALIZED_NAME_BENEFICIARY_ID)
@@ -147,11 +147,11 @@ public class Beneficiary {
   }
 
    /**
-   * It displays the unique ID you created to identify the beneficiary.
+   * It displays the unique Id you created to identify the beneficiary.
    * @return beneficiaryId
   **/
   @javax.annotation.Nullable
-  @Schema(example = "JOHN18011343", requiredMode = Schema.RequiredMode.NOT_REQUIRED, description = "It displays the unique ID you created to identify the beneficiary.")
+  @Schema(example = "JOHN18011343", requiredMode = Schema.RequiredMode.NOT_REQUIRED, description = "It displays the unique Id you created to identify the beneficiary.")
   public String getBeneficiaryId() {
     return beneficiaryId;
   }
