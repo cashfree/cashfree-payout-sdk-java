@@ -84,7 +84,7 @@ public class CashfreePayout {
   public PayoutWebhookEvent PayoutVerifyWebhookSignature(String signature, String rawBody, String timestamp) throws Exception {
         try {
             String data = timestamp + rawBody;
-            String secretKey = Cashfree.XClientSecret;
+            String secretKey = CashfreePayout.XClientSecret;
             Mac sha256_HMAC = Mac.getInstance("HmacSHA256");
             SecretKeySpec secret_key_spec = new SecretKeySpec(secretKey.getBytes(), "HmacSHA256");
             sha256_HMAC.init(secret_key_spec);
